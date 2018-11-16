@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  table
+    thead
+      th ブログ
+      th 著者
+      th タイトル
+      th 更新日時
+    tbody
+      - for (let i = 0; i < posts.length; i++) {
+        tr
+          td #{posts[i].dataValues.collection.dataValues.title}
+          td #{posts[i].dataValues.user.dataValues.username}
+          td
+            a(href="/#{posts[i].dataValues.user.username}/#{posts[i].dataValues.slug}") #{posts[i].dataValues.title}
+          td #{moment(posts[i].dataValues.updated).format('YYYY年MM月DD日 HH時mm分ss秒')}
+      - }
