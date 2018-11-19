@@ -1,8 +1,46 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 30px;
+  font: 20px serif;
+  line-height: 1.3em;
 }
 
-a {
-  color: #00B7FF;
+h1 {
+  font-size: 1.5em;
+  margin: 0px 0px 0.5em 0px;
 }
+
+.posts li {
+  list-style: none;
+  margin: 0.5em 0px;
+}
+.posts li:hover {
+  background-color: #eaeaea;
+}
+
+.posts .blog_title {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.posts .post_title {
+  font-size: 1.2em;
+}
+
+.posts .author {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 0.6em;
+  text-align: right;
+  margin: 0px 0.5em;
+}
+
+.posts .updated {
+  display: inline-block;
+  font-size: 0.6em;
+  text-align: right;
+  margin: 0px 0.5em;
+}
+
+a { color: #00B7FF; }
+a:hover { color: #007daf; }
+a:visited { color: #ff6d8d; }

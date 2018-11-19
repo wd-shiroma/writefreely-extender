@@ -1,7 +1,7 @@
 doctype html
 html
   head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    title= process.env.TITLE
+    link(rel='stylesheet', href='/stylesheets/style.css' type='text/css')
   body
     block content

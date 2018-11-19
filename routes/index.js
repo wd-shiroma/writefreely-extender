@@ -46,7 +46,10 @@ router.get('/', function(req, res, next) {
       console.log(p.dataValues.updated_obj);
       return p
     })
-    res.render('index', { posts: posts });
+    res.render('index', {
+      posts: posts,
+      title: process.env.TITLE
+    });
   });
 
 });
